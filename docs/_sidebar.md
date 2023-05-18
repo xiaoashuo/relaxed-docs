@@ -13,3 +13,5 @@
     * [Mybatis-plus模块](zh-cn/功能模块/MybatisPlus模块.md)
     * [Oauth2模块](zh-cn/功能模块/Oauth2模块.md)
     * [Cache模块](zh-cn/功能模块/Cache模块.md)
+* **Maven插件**
+  * [pojo-to-sql](zh-cn/Maven插件/pojo-to-sql.md)
