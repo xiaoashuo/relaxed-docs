@@ -2,3 +2,11 @@
 * **功能模块**
     * [Util模块](zh-cn/功能模块/util模块.md)
     * [Http模块](zh-cn/功能模块/Http模块.md)
+    * [Download模块](zh-cn/功能模块/Download模块.md)
+    * [Excel模块](zh-cn/功能模块/Excel模块.md)
+    * [Oss模块](zh-cn/功能模块/OSS模块.md)
+    * [Sftp模块](zh-cn/功能模块/Sftp模块.md)
+    * [Secret模块](zh-cn/功能模块/Secret模块.md)
+    * [多数据源模块](zh-cn/功能模块/多数据源模块.md)
+    * [异常通知模块](zh-cn/功能模块/异常通知模块.md)
+    * [邮件模块](zh-cn/功能模块/邮件模块.md)
