@@ -12,3 +12,4 @@
     * [邮件模块](zh-cn/功能模块/邮件模块.md)
     * [Mybatis-plus模块](zh-cn/功能模块/MybatisPlus模块.md)
     * [Oauth2模块](zh-cn/功能模块/Oauth2模块.md)
+    * [Cache模块](zh-cn/功能模块/Cache模块.md)
