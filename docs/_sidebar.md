@@ -10,3 +10,5 @@
     * [多数据源模块](zh-cn/功能模块/多数据源模块.md)
     * [异常通知模块](zh-cn/功能模块/异常通知模块.md)
     * [邮件模块](zh-cn/功能模块/邮件模块.md)
+    * [Mybatis-plus模块](zh-cn/功能模块/MybatisPlus模块.md)
+    * [Oauth2模块](zh-cn/功能模块/Oauth2模块.md)
