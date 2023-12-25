@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Relaxed-Docs',
   description: 'Just playing around',
-
+  base: /relaxed-docs/,
   themeConfig: {
     logo: './img/logo.png',
     activeHeaderLinks: false,
