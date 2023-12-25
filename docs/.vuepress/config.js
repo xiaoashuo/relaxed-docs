@@ -1,10 +1,12 @@
 module.exports = {
   title: 'Relaxed-Docs',
   description: 'Just playing around',
+  theme: 'reco',
   base: '/relaxed-docs/',
   themeConfig: {
     logo: './img/logo.png',
     activeHeaderLinks: false,
+    subSidebar: 'auto',
     //导航栏
     nav: [
       { text: '首页', link: '/' },
