@@ -34,6 +34,7 @@ if %errorlevel% neq 0 (
 )
 :: Return to the original directory
 cd ..
+echo 访问地址: https://xiaoashuo.github.io/relaxed-docs/
 pause()
 
 

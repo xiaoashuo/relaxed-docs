@@ -15,17 +15,25 @@ module.exports = {
         ariaLabel: 'web',
         items: [
           { text: 'Vue', link: 'https://cn.vuejs.org/guide/introduction.html' },
-          { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/theme/' },
+          { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/guide/' },
           { text: 'Vuex', link: 'https://vuex.vuejs.org/zh/' },
           { text: 'Pinia', link: 'https://pinia.web3doc.top/introduction.html' },
           { text: 'VueRouter', link: 'https://router.vuejs.org/zh/introduction.html' },
           { text: 'Axios', link: 'http://www.axios-js.com/zh-cn/docs/' },
+          { text: '项目模板', items:[
+              { text: 'Ui模板市场', link: 'https://www.builtatlightspeed.com/' },
+              { text: 'AntdV', link: 'https://pro.antdv.com/docs/getting-started' },
+              { text: 'Antd', link: 'https://pro.ant.design/zh-CN/docs/overview' },
+              { text: 'VueElementAdmin', link: 'https://panjiachen.github.io/vue-element-admin-site/zh/guide/' },
+
+            ] },
         ]
       },
       {
         text: '项目地址',
         ariaLabel: 'Language Menu',
         items: [
+          { text: 'Spring', link: 'https://spring.io/' },
           { text: '后台项目', link: 'https://github.com/xiaoashuo/relaxed' },
           { text: '贷款项目', link: 'https://github.com/xiaoashuo/relaxed-admin-loan' }
         ]
