@@ -68,6 +68,7 @@ module.exports = {
           './zh/blogs/异常通知模块.md',
           './zh/blogs/邮件模块.md',
           './zh/blogs/MybatisPlus模块.md',
+          './zh/blogs/MybatisPlus模块.md',
           './zh/blogs/Oauth2模块.md',
           './zh/blogs/Cache模块.md',
           './zh/blogs/日志模块.md',
