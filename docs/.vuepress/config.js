@@ -73,6 +73,7 @@ module.exports = {
           './zh/blogs/Cache模块.md',
           './zh/blogs/日志模块.md',
           './zh/blogs/POI模块.md',
+          './zh/blogs/XXL-JOB模块.md',
 
         ]
       },

@@ -54,11 +54,11 @@ PoiGlobalConfig: 全局配置，对以上两种工具类皆生效。
 ### 1.引入依赖
 
 ```xml
-		<dependency>
-				<groupId>com.lovecyy</groupId>
-				<artifactId>relaxed-third-poi</artifactId>
-				<version>${latestVersion}</version>
-		</dependency>
+	 <dependency>
+             <groupId>com.lovecyy</groupId>
+             <artifactId>relaxed-poi-tl</artifactId>
+             <version>${revision}</version>
+    </dependency>
 ```
 
 ### 2.单元测试
@@ -77,7 +77,7 @@ String imgPath = "D:\\profile\\微信图片_20231205172145.jpg";
 #### 一、数据构造
 
 ```java
-// 普通文本
+        // 普通文本
 		TextContentData textContentData = PoiDataHelper.Text.builder().labelName("username").content("张三").build();
 		// 超链接
 		TextContentData genderTextContentData = PoiDataHelper.Text.builder().labelName("gender").content("女")
@@ -102,6 +102,15 @@ String imgPath = "D:\\profile\\微信图片_20231205172145.jpg";
 		loopDatas.add(mockTestLoopData());
 		LoopRowTableContentData loopRowTableContentData = PoiDataHelper.LOOP_ROW_TABLE.<TestData>builder()
 				.labelName("policyDetails").prefix("[").suffix("]").dataStartRow(2).dataList(loopDatas).build();
+	    //html 
+		HtmlContentData htmlContent = PoiDataHelper.HTML.builder().labelName("htmlContent")
+				.content("<p style='color:red'>测试</p>").build();
+		// 自定义标题样式
+		// HtmlRenderConfig htmlRenderConfig = extHtmlConfig();
+		// HtmlContentData htmlContent =
+		// PoiDataHelper.HTML.builder().labelName("htmlContent")
+		// .content("<p
+		// style='color:red'>测试</p>").htmlRenderConfig(htmlRenderConfig).build();			
 ```
 
 #### 二、执行渲染
@@ -115,6 +124,7 @@ List<LabelData> contents = new ArrayList<>();
 		contents.add(tableContentData);
 		contents.add(listContentData);
 		contents.add(loopRowTableContentData);
+		contents.add(htmlContent);
 //结构化数据渲染word
 PoiUtil.renderWord(new File(templatePath), new File(destPath), contents);
 //非结构化数据渲染word,支持直接指定map数据
