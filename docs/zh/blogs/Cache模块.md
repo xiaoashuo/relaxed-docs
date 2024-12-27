@@ -3,45 +3,57 @@
 ## 一、引入依赖
 
 ```xml
-
-  <dependency>
+        <dependency>
             <groupId>com.lovecyy</groupId>
-            <artifactId>relaxed-spring-boot-starter-cache</artifactId>
-             <version>${version}</version>
-  </dependency>
+            <artifactId>relaxed-spring-boot-starter-redis</artifactId>
+            <version>${version}</version>
+        </dependency>
   
 ```
 
 ## 二、配置文件
 
 ```yml
+spring:
+  redis:
+    database: 6
+    host: 127.0.0.7
+    port: 6379
+    password: 123456
+    lettuce:
+      pool:
+        max-idle: 30 #最大空闲连接数
+        min-idle: 0 #最小空闲连接数
+        max-active: 30 #最大连接数
+        max-wait: -1 #最大等待时间
+
 relaxed:
-   cache:
-     #全局key前缀
-     key-prefix: 'pc:'
-     #锁key后缀
-     lock-key-suffix: locked
-     #key分隔符
-     delimiter: ':'
-     #空值占位
-     null-value: "N_V"
-     #默认全局过期时间 ms
-     expire-time: 86400
-     #锁超时时间
-     locked-time-out: 1000
+  redis:
+    #全局key前缀
+    key-prefix: 'pc:'
+    #锁key后缀
+    lock-key-suffix: locked
+    #key分隔符
+    delimiter: ':'
+    #空值占位
+    null-value: "N_V"
+    #默认全局过期时间 ms
+    expire-time: 86400
+    #锁超时时间
+    locked-time-out: 1000
+
 ```
 
 ## 三、编程式调用
 
 ```java
-//1.引入依赖
-private final CacheManage<String> cacheManage;
+ 
 //2.设置缓存
-cacheManage.set(key,param,timeout);
+RedisHelper.set(key, param,timeout);
 //3.查询缓存
-String value = cacheManage.get(key);
+String value = RedisHelper.get(key);
 //4.删除缓存
-cacheManage.remove(key);
+RedisHelper.del(key);
 ```
 
 ## 四、声明式调用
@@ -74,7 +86,7 @@ cacheManage.remove(key);
 
 #### 1.LockManage
 
-> 分布式锁管理 工具 ，由Spring托管，直接注入。
+> 分布式锁管理 工具 ， 静态方法直接调用
 
 ```java
 	/**
@@ -129,7 +141,7 @@ String cacheData = DistributedLock.<String>instance().action(ops.lockKey(), () -
 				ops.cachePut().accept(cacheValue);
 			}
 			return cacheValue;
-		}).lockManage(lockManage).onLockFail(cacheQuery).lock();
+		}).onLockFail(cacheQuery).lock();
 ```
 
 ### 二、前缀Key生成器
@@ -138,16 +150,22 @@ String cacheData = DistributedLock.<String>instance().action(ops.lockKey(), () -
 
 ```java
 @RequiredArgsConstructor
-public class PrefixKeyGenerator implements KeyGenerator {
+public class PrefixKeyGenerator implements IRedisPrefixConverter {
 
-	private final String prefix;
+		private final String prefix;
+
+	public DefaultRedisPrefixConverter(String prefix) {
+		this.prefix = prefix;
+	}
 
 	@Override
-	public String generate(String originalText) {
-		if (StrUtil.isEmpty(originalText) || StrUtil.isEmpty(prefix)) {
-			return originalText;
-		}
-		return prefix + originalText;
+	public String getPrefix() {
+		return prefix;
+	}
+
+	@Override
+	public boolean match() {
+		return true;
 	}
 
 }
@@ -169,6 +187,10 @@ public static String nullValue();
 public static long expireTime();
 
 public static long lockedTimeOut();
+
+public static boolean  lockedRenewal();
+
+public static CacheProperties.Watcher  watcher();
 
 ```
 
