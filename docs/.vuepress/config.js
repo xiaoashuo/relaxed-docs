@@ -87,6 +87,15 @@ module.exports = {
 
         ]
       },
+      {
+        title: '常见问题',   // 必要的
+        collapsable: false, // 可选的, 默认值是 true,
+        sidebarDepth: 2,    // 可选的, 默认值是 1
+        children: [
+          './zh/question/SFTP工具类异常.md',
+
+        ]
+      },
     ]
   }
 }
