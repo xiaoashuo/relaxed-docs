@@ -75,6 +75,7 @@ module.exports = {
           './zh/blogs/POI模块.md',
           './zh/blogs/XXL-JOB模块.md',
           './zh/blogs/MybatisMap映射模块.md',
+          './zh/blogs/线程池监控.md',
 
         ]
       },
