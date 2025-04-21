@@ -162,11 +162,11 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
 
 #### 访问令牌请求
 
-客户端发起向授权服务器的令牌端点发起一个 POST 请求，其 Content-type 必须为 “application/x-www-form-urlencoded”，并在其请求体中需要包含以下参数：
+客户端发起向授权服务器的令牌端点发起一个 POST 请求，其 Content-type 必须为 "application/x-www-form-urlencoded"，并在其请求体中需要包含以下参数：
 
 | 参数         | 必传 | 描述                                                         |
 | ------------ | ---- | ------------------------------------------------------------ |
-| grant_type   | 是   | 值必须是 “authorization_code”                                |
+| grant_type   | 是   | 值必须是 "authorization_code"                                |
 | code         | 是   | 值为上一步从授权服务器中收到的授权码                         |
 | redirect_uri | 是   | 如果授权请求中携带了redirect_uri参数，则这里的值必须其相同   |
 | client_id    | 是   | 如果客户端没有和授权服务器进行过 Client Credentials 的身份验证，则必须携带 |
@@ -189,9 +189,9 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 - 要求机密客户端或任何被颁发了客户端凭据（或有其他身份验证要求）的客户端进行客户端身份验证，
 - 若包括了客户端身份验证，验证客户端身份，
-- 确保授权码颁发给了通过身份验证的机密客户端，或者如果客户端是公开的，确保代码颁发给了请求中的“client_id”，
+- 确保授权码颁发给了通过身份验证的机密客户端，或者如果客户端是公开的，确保代码颁发给了请求中的"client_id"，
 - 验证授权码是有效的，并
-- 确保给出了 “redirect_uri” 参数，若 “redirect_uri” 参数包含在初始授权请求中，确保它们的值是相同的。
+- 确保给出了 "redirect_uri" 参数，若 "redirect_uri" 参数包含在初始授权请求中，确保它们的值是相同的。
 
 #### 访问令牌响应
 
@@ -298,7 +298,7 @@ Host: server.example.com
 | ------------ | ---- | ------------------------------------------------------------ |
 | access_token | 是   | 授权服务器颁发的访问令牌。                                   |
 | token_type   | 是   | 颁发的令牌的类型，其值是大小写不敏感的。（一般是 Bearer）    |
-| expires_in   | 否   | 推荐的。以秒为单位的访问令牌生命周期。例如，值“3600”表示访问令牌将在从生成响应时的1小时后到期。如果省略，则授权服务器应该通过其他方式提供过期时间，或者记录默认值。 |
+| expires_in   | 否   | 推荐的。以秒为单位的访问令牌生命周期。例如，值"3600"表示访问令牌将在从生成响应时的1小时后到期。如果省略，则授权服务器应该通过其他方式提供过期时间，或者记录默认值。 |
 | scope        | 否   | 若与客户端请求的 scope 范围相同则可以不传，否则必需返回此值。 |
 | state        | 否   | 当授权请求携带此参数时则必传，值原封不动回传                 |
 
@@ -309,7 +309,7 @@ HTTP/1.1 302 Found
 Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA&state=xyz&token_type=example&expires_in=3600
 ```
 
-开发人员应注意，一些用户代理不支持在HTTP“Location”HTTP响应标头字段中包含片段组成部分。这些客户端需要使用除了3xx重定向响应以外的其他方法来重定向客户端——-例如，返回一个HTML页面，其中包含一个具有链接到重定向URI的动作的“继续”按钮。
+开发人员应注意，一些用户代理不支持在HTTP"Location"HTTP响应标头字段中包含片段组成部分。这些客户端需要使用除了3xx重定向响应以外的其他方法来重定向客户端——-例如，返回一个HTML页面，其中包含一个具有链接到重定向URI的动作的"继续"按钮。
 
 客户端必须忽略无法识别的响应参数。 OAuth 未定义授权代码字符串的大小。 客户端应该避免对授权码的大小做出假设。 授权服务器应该记录它发出的任何值的大小。
 
@@ -351,11 +351,11 @@ grant_type：password
 
 #### 访问令牌请求
 
-客户端向授权服务器的令牌端点发起一个 POST 请求，其 Content-type 必须为 “application/x-www-form-urlencoded”，并在其请求体中需要包含以下参数：
+客户端向授权服务器的令牌端点发起一个 POST 请求，其 Content-type 必须为 "application/x-www-form-urlencoded"，并在其请求体中需要包含以下参数：
 
 | 参数       | 必传 | 描述                 |
 | ---------- | ---- | -------------------- |
-| grant_type | 是   | 值必须是 “password”  |
+| grant_type | 是   | 值必须是 "password"  |
 | username   | 是   | 资源所有者的用户名。 |
 | password   | 是   | 资源所有者的密码。   |
 | scope      | 是   | 请求访问的范围       |
@@ -426,11 +426,11 @@ grant_type: client_credentials
 
 #### 访问令牌请求
 
-客户端向授权服务器的令牌端点发起一个 POST 请求，其 Content-type 必须为 “application/x-www-form-urlencoded”，并在其请求体中需要包含以下参数：
+客户端向授权服务器的令牌端点发起一个 POST 请求，其 Content-type 必须为 "application/x-www-form-urlencoded"，并在其请求体中需要包含以下参数：
 
 | 参数       | 必传 | 描述                          |
 | ---------- | ---- | ----------------------------- |
-| grant_type | 是   | 值必须是 “client_credentials” |
+| grant_type | 是   | 值必须是 "client_credentials" |
 | scope      | 是   | 请求访问的范围                |
 
 一个请求示例如下：
@@ -472,7 +472,7 @@ Pragma: no-cache
 
 ```xml
     <dependency>
-            <groupId>com.lovecyy</groupId>
+            <groupId>cn.lovecyy</groupId>
             <artifactId>relaxed-auth</artifactId>
             <version>${version}</version>
     </dependency>
@@ -625,7 +625,7 @@ public class AuthDemoApplication {
 
 ```xml
    <dependency>
-            <groupId>com.lovecyy</groupId>
+            <groupId>cn.lovecyy</groupId>
             <artifactId>relaxed-resource</artifactId>
             <version>${version}</version>
   </dependency>

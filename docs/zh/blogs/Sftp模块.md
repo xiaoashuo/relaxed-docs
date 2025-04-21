@@ -4,7 +4,7 @@
 
 ```xml
         <dependency>
-            <groupId>com.lovecyy</groupId>
+            <groupId>cn.lovecyy</groupId>
             <artifactId>relaxed-spring-boot-starter-sftp</artifactId>
             <version>${version}</version>
         </dependency>

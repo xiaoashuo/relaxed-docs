@@ -12,7 +12,7 @@ SFTP上有文件，用SFTP工具类读取提示`No such file`
 
 ```xml
       <dependency>
-            <groupId>com.lovecyy</groupId>
+            <groupId>cn.lovecyy</groupId>
             <artifactId>relaxed-spring-boot-starter-sftp</artifactId>
             <version>1.4.12</version>
         </dependency>

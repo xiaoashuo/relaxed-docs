@@ -59,7 +59,6 @@ module.exports = {
         children: [
           './zh/blogs/Download模块',
           './zh/blogs/util模块.md',
-          './zh/blogs/Http模块.md',
           './zh/blogs/Excel模块.md',
           './zh/blogs/OSS模块.md',
           './zh/blogs/Sftp模块.md',
@@ -74,7 +73,6 @@ module.exports = {
           './zh/blogs/日志模块.md',
           './zh/blogs/POI模块.md',
           './zh/blogs/XXL-JOB模块.md',
-          './zh/blogs/MybatisMap映射模块.md',
           './zh/blogs/线程池监控.md',
 
         ]

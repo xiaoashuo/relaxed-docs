@@ -12,7 +12,7 @@
 
 ```xml
      <dependency>
-            <groupId>com.lovecyy</groupId>
+            <groupId>cn.lovecyy</groupId>
             <artifactId>relaxed-extend-mybatis-encrypt</artifactId>
             <version>${version}</version>
         </dependency>

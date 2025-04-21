@@ -64,7 +64,7 @@ INSERT INTO user (id,user_id, balance) VALUES
   </dependency>
 <!--Mybatis plus 扩展依赖--> 
 <dependency>
-      <groupId>com.lovecyy</groupId>
+      <groupId>cn.lovecyy</groupId>
       <artifactId>relaxed-extend-mybatis-plus</artifactId>
      <version>${version}</version>
 </dependency>        

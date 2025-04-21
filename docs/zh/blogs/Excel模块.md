@@ -10,7 +10,7 @@ EasyExcel是一个基于Java的简单、省内存的读写Excel的开源项目�
 
 ```xml
   <dependency>
-    <groupId>com.lovecyy</groupId>
+    <groupId>cn.lovecyy</groupId>
     <artifactId>relaxed-spring-boot-starter-easyexcel</artifactId>
     <version>${version}</version>
 </dependency>

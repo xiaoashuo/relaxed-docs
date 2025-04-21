@@ -52,7 +52,7 @@ mvn install
 ```xml
 <!--引入对应坐标-->     
 <dependency>
-                <groupId>com.lovecyy</groupId>
+                <groupId>cn.lovecyy</groupId>
                 <artifactId>relaxed-spring-boot-starter-log</artifactId>
                 <version>${revision}</version>
 </dependency>
@@ -88,8 +88,6 @@ public class AccessLogHandle implements AccessLogHandler<AccessLog> {
 	}
 }
 ```
-
-
 
 ### 3、application.yml
 

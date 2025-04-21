@@ -55,7 +55,7 @@ PoiGlobalConfig: 全局配置，对以上两种工具类皆生效。
 
 ```xml
 	 <dependency>
-             <groupId>com.lovecyy</groupId>
+             <groupId>cn.lovecyy</groupId>
              <artifactId>relaxed-poi-tl</artifactId>
              <version>${revision}</version>
     </dependency>
