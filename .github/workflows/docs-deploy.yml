@@ -28,12 +28,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: pnpm
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      # ⭐ 关键：启用 corepack（自带 pnpm）
+      - name: Enable corepack
+        run: corepack enable
+
+      # ⭐ 可选：固定 pnpm 版本（强烈建议）
+      - name: Prepare pnpm
+        run: corepack prepare pnpm@9.0.0 --activate
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -44,7 +46,6 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # ⭐ 与你仓库 + vite 构建完全一致
           path: src/.vuepress/dist
 
   deploy:
