@@ -1,21 +1,57 @@
-name: Build and Deploy
-#on: [push]
+name: Deploy VuePress Hope (pnpm + vite)
+
 on:
   push:
     branches:
-      - gh_pages
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
 
-      - name: relaxed-docs
-        uses: xiaoashuo/relaxed-docs@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: xiaoashuo/relaxed-docs
-          TARGET_BRANCH: gh_pages
-          BUILD_SCRIPT: pnpm && pnpm docs:build
-          BUILD_DIR: src/.vuepress/dist
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm docs:build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # ⭐ 与你仓库 + vite 构建完全一致
+          path: src/.vuepress/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy
+        uses: actions/deploy-pages@v4
