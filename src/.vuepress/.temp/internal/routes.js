@@ -5,8 +5,6 @@ export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/index.html.js"), meta: {"title":"项目主页","icon":"house"} }],
   ["/zh/portfolio.html", { loader: () => import(/* webpackChunkName: "zh_portfolio.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/portfolio.html.js"), meta: {"title":"作者信息","icon":"ion:person"} }],
   ["/zh/", { loader: () => import(/* webpackChunkName: "zh_index.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/index.html.js"), meta: {"title":"项目主页","icon":"house"} }],
-  ["/zh/maven/pojo-to-sql.html", { loader: () => import(/* webpackChunkName: "zh_maven_pojo-to-sql.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/maven/pojo-to-sql.html.js"), meta: {"title":"pojo-sql-maven-plugin"} }],
-  ["/zh/questions/SFTP%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BC%82%E5%B8%B8.html", { loader: () => import(/* webpackChunkName: "zh_questions_SFTP工具类异常.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/questions/SFTP工具类异常.html.js"), meta: {"title":"SFTP工具类异常"} }],
   ["/zh/demo/disable.html", { loader: () => import(/* webpackChunkName: "zh_demo_disable.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/demo/disable.html.js"), meta: {"title":"布局与功能禁用","icon":"gears","order":4} }],
   ["/zh/demo/encrypt.html", { loader: () => import(/* webpackChunkName: "zh_demo_encrypt.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/demo/encrypt.html.js"), meta: {"title":"密码加密的文章","icon":"lock"} }],
   ["/zh/demo/layout.html", { loader: () => import(/* webpackChunkName: "zh_demo_layout.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/demo/layout.html.js"), meta: {"title":"布局","icon":"object-group","order":2} }],
@@ -14,6 +12,8 @@ export const routes = Object.fromEntries([
   ["/zh/demo/page.html", { loader: () => import(/* webpackChunkName: "zh_demo_page.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/demo/page.html.js"), meta: {"title":"页面配置","icon":"file","order":3} }],
   ["/zh/demo/", { loader: () => import(/* webpackChunkName: "zh_demo_index.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/demo/index.html.js"), meta: {"title":"功能说明","icon":"laptop-code"} }],
   ["/zh/guide/", { loader: () => import(/* webpackChunkName: "zh_guide_index.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/index.html.js"), meta: {"title":"文档说明","icon":"lightbulb"} }],
+  ["/zh/maven/pojo-to-sql.html", { loader: () => import(/* webpackChunkName: "zh_maven_pojo-to-sql.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/maven/pojo-to-sql.html.js"), meta: {"title":"pojo-sql-maven-plugin"} }],
+  ["/zh/questions/SFTP%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BC%82%E5%B8%B8.html", { loader: () => import(/* webpackChunkName: "zh_questions_SFTP工具类异常.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/questions/SFTP工具类异常.html.js"), meta: {"title":"SFTP工具类异常"} }],
   ["/zh/guide/relaxed/Cache%E6%A8%A1%E5%9D%97.html", { loader: () => import(/* webpackChunkName: "zh_guide_relaxed_Cache模块.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/relaxed/Cache模块.html.js"), meta: {"title":"Cache模块"} }],
   ["/zh/guide/relaxed/Download%E6%A8%A1%E5%9D%97.html", { loader: () => import(/* webpackChunkName: "zh_guide_relaxed_Download模块.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/relaxed/Download模块.html.js"), meta: {"title":"Download模块"} }],
   ["/zh/guide/relaxed/Excel%E6%A8%A1%E5%9D%97.html", { loader: () => import(/* webpackChunkName: "zh_guide_relaxed_Excel模块.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/relaxed/Excel模块.html.js"), meta: {"title":"Excel导入导出"} }],
@@ -37,20 +37,3 @@ export const routes = Object.fromEntries([
   ["/zh/maven/", { loader: () => import(/* webpackChunkName: "zh_maven_index.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/maven/index.html.js"), meta: {"title":"Maven"} }],
   ["/zh/questions/", { loader: () => import(/* webpackChunkName: "zh_questions_index.html" */"D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/questions/index.html.js"), meta: {"title":"Questions"} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}

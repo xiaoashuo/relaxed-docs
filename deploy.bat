@@ -5,10 +5,10 @@ set REPO_URL=git@github.com:xiaoashuo/relaxed-docs.git
 set BRANCH_NAME=master
 set REMOTE_BRANCH_NAME=gh_pages
 :: Generate static files
-call yarn docs:build
+call pnpm  docs:build
 
 :: Enter the generated folder
-cd docs\.vuepress\dist
+cd src\.vuepress\dist
 :: dir
 :: If deploying to a custom domain
 :: echo 'www.example.com' > CNAME
