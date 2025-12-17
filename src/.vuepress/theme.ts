@@ -6,7 +6,7 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 export default hopeTheme({
 
   hostname: "https://github.com/xiaoashuo/relaxed-docs",
-
+  fullscreen: true,
   author: {
     name: "xiaoashuo",
     url: "https://github.com/xiaoashuo/relaxed-docs",
