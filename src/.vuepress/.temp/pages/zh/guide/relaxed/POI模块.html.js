@@ -1,0 +1,16 @@
+import comp from "D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/relaxed/POI模块.html.vue"
+const data = JSON.parse("{\"path\":\"/zh/guide/relaxed/POI%E6%A8%A1%E5%9D%97.html\",\"title\":\"POI模块\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"POI模块 官方地址: http://deepoove.com/poi-tl 概述 基于POI-TL二次封装，使word模板渲染操作尽可能的便捷。 默认配置 默认占位符方式{{xxx}}，若需替换默认占位符。参考如下代码 Word模板 wordword 使用说明 核心工具类 PoiTemplate: 非静态工具类，支持注册成bean PoiUtil: ...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"POI模块\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"xiaoashuo\\\",\\\"url\\\":\\\"https://github.com/xiaoashuo/relaxed-docs\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://github.com/xiaoashuo/relaxed-docs/zh/guide/relaxed/POI%E6%A8%A1%E5%9D%97.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Relaxed-Docs\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"POI模块\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"POI模块 官方地址: http://deepoove.com/poi-tl 概述 基于POI-TL二次封装，使word模板渲染操作尽可能的便捷。 默认配置 默认占位符方式{{xxx}}，若需替换默认占位符。参考如下代码 Word模板 wordword 使用说明 核心工具类 PoiTemplate: 非静态工具类，支持注册成bean PoiUtil: ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"readingTime\":{\"minutes\":1.87,\"words\":561},\"filePathRelative\":\"zh/guide/relaxed/POI模块.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

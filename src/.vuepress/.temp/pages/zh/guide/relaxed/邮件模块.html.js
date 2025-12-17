@@ -1,0 +1,16 @@
+import comp from "D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/relaxed/邮件模块.html.vue"
+const data = JSON.parse("{\"path\":\"/zh/guide/relaxed/%E9%82%AE%E4%BB%B6%E6%A8%A1%E5%9D%97.html\",\"title\":\"邮件模块\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"邮件模块 项目中需要对一些信息进行邮件提醒，故此对发送邮件工具进行一系列整合。 使用方式 一、引入坐标 二、配置application.yml 三、开始使用 注入依赖 1.发送简单文本 2.发送html文本 3.自定义发送实体\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"邮件模块\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"xiaoashuo\\\",\\\"url\\\":\\\"https://github.com/xiaoashuo/relaxed-docs\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://github.com/xiaoashuo/relaxed-docs/zh/guide/relaxed/%E9%82%AE%E4%BB%B6%E6%A8%A1%E5%9D%97.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Relaxed-Docs\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"邮件模块\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"邮件模块 项目中需要对一些信息进行邮件提醒，故此对发送邮件工具进行一系列整合。 使用方式 一、引入坐标 二、配置application.yml 三、开始使用 注入依赖 1.发送简单文本 2.发送html文本 3.自定义发送实体\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"readingTime\":{\"minutes\":0.78,\"words\":235},\"filePathRelative\":\"zh/guide/relaxed/邮件模块.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

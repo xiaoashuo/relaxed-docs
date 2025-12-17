@@ -1,0 +1,1 @@
+export const sidebarData = {"/zh/guide/":["",{"text":"Relaxed","prefix":"relaxed/","collapsible":true,"children":["","多数据源模块","日志模块","脱敏模块","线程池监控","异常通知模块","邮件模块","Cache模块","Download模块","Excel模块","MybatisPlus模块","Mybatis实现字段加解密","Oauth2模块","OSS模块","POI模块","Secret模块","Sftp模块","util模块","XXL-JOB模块"]}],"/zh/maven/":["pojo-to-sql"],"/zh/questions/":["SFTP工具类异常"]};

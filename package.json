@@ -1,12 +1,27 @@
 {
-  "devDependencies": {
-    "vuepress": "^1.9.10"
-  },
+  "name": "relaxed-docs",
+  "description": "Relaxed项目是一个基础的通用脚手架，旨在为项目快速开发提供一系列的基础能力，方便使用者根据项目需求快速进行功能拓展。",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "pnpm dlx vp-update"
   },
-  "dependencies": {
-    "vuepress-theme-reco": "^1.6.17"
-  }
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/plugin-slimsearch": "2.0.0-rc.121",
+    "sass-embedded": "^1.93.3",
+    "vue": "^3.5.25",
+    "vuepress": "2.0.0-rc.26",
+    "vuepress-theme-hope": "2.0.0-rc.99"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "packageManager": "pnpm@10.26.0+sha1.d4c04871f266000241c99154375254a76cc403dd"
 }

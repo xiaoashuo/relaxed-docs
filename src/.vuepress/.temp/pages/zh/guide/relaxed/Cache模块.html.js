@@ -1,0 +1,16 @@
+import comp from "D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/guide/relaxed/Cache模块.html.vue"
+const data = JSON.parse("{\"path\":\"/zh/guide/relaxed/Cache%E6%A8%A1%E5%9D%97.html\",\"title\":\"Cache模块\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"Cache模块 一、引入依赖 二、配置文件 三、编程式调用 四、声明式调用 内置三大注解 @Cached 分布式锁缓存，若查出数据为空，则默认方式空值占位 prefix 缓存前缀 keyJoint key动态参数，支持SPEL ，若需添加后缀，可在表达式后添加文本。eg: #param+'suffix' condition 条件表达式 若成立，则注解生...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Cache模块\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"xiaoashuo\\\",\\\"url\\\":\\\"https://github.com/xiaoashuo/relaxed-docs\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://github.com/xiaoashuo/relaxed-docs/zh/guide/relaxed/Cache%E6%A8%A1%E5%9D%97.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Relaxed-Docs\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Cache模块\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Cache模块 一、引入依赖 二、配置文件 三、编程式调用 四、声明式调用 内置三大注解 @Cached 分布式锁缓存，若查出数据为空，则默认方式空值占位 prefix 缓存前缀 keyJoint key动态参数，支持SPEL ，若需添加后缀，可在表达式后添加文本。eg: #param+'suffix' condition 条件表达式 若成立，则注解生...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"readingTime\":{\"minutes\":2.33,\"words\":699},\"filePathRelative\":\"zh/guide/relaxed/Cache模块.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

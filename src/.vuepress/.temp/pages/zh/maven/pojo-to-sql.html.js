@@ -1,0 +1,16 @@
+import comp from "D:/idea/source/person/relaxed-docs/src/.vuepress/.temp/pages/zh/maven/pojo-to-sql.html.vue"
+const data = JSON.parse("{\"path\":\"/zh/maven/pojo-to-sql.html\",\"title\":\"pojo-sql-maven-plugin\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"pojo-sql-maven-plugin 介绍 根据实体 生成建表Sql语句 Maven 插件 需求: 对接某合作方，提供N张表M字段，数据落库到我们本地数据库， 导致手写工作量巨大，因此使用此插件辅助生成。 插件地址 使用说明 引入Maven插件坐标 mvn 执行命令 3.idea使用maven插件辅助直接执行 4.附加实体文档注释\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"pojo-sql-maven-plugin\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"xiaoashuo\\\",\\\"url\\\":\\\"https://github.com/xiaoashuo/relaxed-docs\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://github.com/xiaoashuo/relaxed-docs/zh/maven/pojo-to-sql.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Relaxed-Docs\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"pojo-sql-maven-plugin\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"pojo-sql-maven-plugin 介绍 根据实体 生成建表Sql语句 Maven 插件 需求: 对接某合作方，提供N张表M字段，数据落库到我们本地数据库， 导致手写工作量巨大，因此使用此插件辅助生成。 插件地址 使用说明 引入Maven插件坐标 mvn 执行命令 3.idea使用maven插件辅助直接执行 4.附加实体文档注释\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"readingTime\":{\"minutes\":0.79,\"words\":236},\"filePathRelative\":\"zh/maven/pojo-to-sql.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

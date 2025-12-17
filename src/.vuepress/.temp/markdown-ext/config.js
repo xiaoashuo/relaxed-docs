@@ -1,0 +1,2 @@
+    import "D:/idea/source/person/relaxed-docs/node_modules/.pnpm/@vuepress+plugin-markdown-e_26310f2b5115b32ae46f7d2c951d28c1/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/footnote.css"
+    import "D:/idea/source/person/relaxed-docs/node_modules/.pnpm/@vuepress+plugin-markdown-e_26310f2b5115b32ae46f7d2c951d28c1/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/tasklist.css"
