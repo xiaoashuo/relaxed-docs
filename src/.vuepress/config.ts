@@ -4,7 +4,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/relaxed-docs/",
-
+  lang: "zh-CN",
   locales: {
     "/": {
       lang: "en-US",
